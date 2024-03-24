@@ -20,5 +20,8 @@ h1{
     height: 100%; /* Set the height of the map container to fill the aside element */
     border-radius: 20px; /* Adjust border radius as needed */
     overflow: hidden; /* Ensure rounded corners are visible */
-    background:pink;
+}
+
+#left {
+    margin-left:0;
 }

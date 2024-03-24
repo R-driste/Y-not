@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="leaflet/leaflet.css" /> -->
+    <link rel="stylesheet" href = {{ url_for('static', filename='bg.css') }}/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <aside class="left">
+        <h1> Gardening Helper! </h1>
+        <div id="groups">
+            SUPPORT GROUPS:
+            {%for g in GROUPS%}
+            <div class="content-sections">
+                <h2>{{g}}</h2>
+            </div>
+            {% endfor %}
+        </div>
+        elements
+        <div id="friends">
+            SUPPORT FRIENDS:
+        </div>
+        elements
+    </aside>
+    <aside id="map-aside">
+    <div id="map">
+    <script src="static/leafbase.js"></script>
+    </div>
+    </aside>
+
+    
+</body>
+</html>
