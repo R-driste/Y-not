@@ -1,4 +1,4 @@
-var map = L.map(document.getElementById('map'),{minZoom: 3}).setView(([40, -100]), 4);
+var map = L.map(document.getElementById('map'),{minZoom: 2}).setView(([40, -100]), 4);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 20,
@@ -8,17 +8,11 @@ var map = L.map(document.getElementById('map'),{minZoom: 3}).setView(([40, -100]
     // add Stamen Watercolor to map.
 
     var bounds = [
-        [23.396308, -125.0], // Southwest corner (latitude, longitude)
-        [48.384358, -66.93457] // Northeast corner (latitude, longitude)
+        [-56, -150.0], // Southwest corner (latitude, longitude)
+        [156, 160] // Northeast corner (latitude, longitude)
     ];
     
 map.setMaxBounds(bounds);
 
-map.on('click', function(event) {
-    // Get the coordinates of the clicked point
-    var lat = event.latlng.lat;
-    var lng = event.latlng.lng;
-    
-    // Add a marker at the clicked point
-    var marker = L.marker([lat, lng]).addTo(map);
-});
+
+

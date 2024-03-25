@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- <link rel="stylesheet" href="leaflet/leaflet.css" /> -->
-    <link rel="stylesheet" href = {{ url_for('static', filename='bg.css') }}/>
+    <link rel="stylesheet" href = "{{ url_for('static', filename='bg.css') }}"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
@@ -16,25 +16,14 @@
 <body>
     <aside class="left">
         <h1> Gardening Helper! </h1>
-        <div id="groups">
-            SUPPORT GROUPS:
-            {%for g in GROUPS%}
-            <div class="content-sections">
-                <h2>{{g}}</h2>
-            </div>
-            {% endfor %}
-        </div>
-        elements
-        <div id="friends">
-            SUPPORT FRIENDS:
-        </div>
-        elements
+        <p1> Click the point you want to save to your profile, or allow us to grab your location</p1>
     </aside>
-    <aside id="map-aside">
+    <button onclick=getLocation()>SUBMIT!</button>
+    <div id="pin-aside">
     <div id="map">
-    <script src="static/leafbase.js"></script>
+    <script src= "{{url_for('static',filename='leafbase copy.js')}}"></script>
     </div>
-    </aside>
+</div>
 
     
 </body>

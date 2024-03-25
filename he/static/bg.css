@@ -1,4 +1,5 @@
 body{
+    color:white;
     background-color:rgb(18, 61, 41);
 }
 h1{
@@ -24,4 +25,14 @@ h1{
 
 #left {
     margin-left:0;
+}
+
+#pin-aside {
+    position: fixed;
+    top: 100px; /* Align the top edge with the top of the viewport */
+    bottom: 8px;
+    right: 0; /* Align the right edge with the right side of the viewport */
+    width: 100%; /* Set the width of the aside element */
+    height:300;
+    background-color: #f0f0f0; /* Background color of the aside element */
 }
