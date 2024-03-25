@@ -36,6 +36,11 @@ button:hover {
   background-color: #9e5862;
 }
 
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
 .container {
   padding: 16px;
 }
@@ -60,18 +65,44 @@ span.psw {
 <body>
 
 <h2>Login Form</h2>
-<form action ="profile_page.php" method="post" >
+
+<form action="/action_page.php" method="post">
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+
+    
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <button>
-    <input type="submit" value="Signup">
-  </button>
+    <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+        
+    <button type="submit" onclick="storePassword()">Login</button>
+    <p id="trial"></p>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
 
+    <!--
+
+    <script>
+      
+      const x = document.getElementById("trial");
+
+      function storeUsername() {
+      // Get the value of the input field with id="nameInput"
+      var userInput = document.getElementById("uname").name;
+      x.innerHTML = userInput
+    }
+
+    function storePassword() {
+      // Get the value of the input field with id="nameInput"
+      var userInput = document.getElementById("psw").name;
+      x.innerHTML = userInput
+    }
+    
+    </script>
+  -->
   </div>
 
   <div class="container" style="background-color:#e0b99b">
