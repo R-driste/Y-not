@@ -1,6 +1,6 @@
-import map from "he/static/leafbase.js"
+
 function ADD(){
-    for (lat,lng in coords){
-        var newmarker = L.marker([lat, lng]).addTo(map)
+    for (c in coords){
+        var newmarker = L.marker([c[0], c[1]]).addTo(map)
     }
 };
