@@ -1,0 +1,53 @@
+.aboutus{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+
+.index{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    left: 325px;
+}
+
+.signup{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    left: 590px;
+}
