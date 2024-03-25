@@ -31,14 +31,25 @@
         </div>
         elements
     </aside>
+    <p id="INVIS"> {{l}}</p>
     <aside id="map-aside">
     <div id="map">
     <script src="static/leafbase.js"></script>
-    {%for thing in l%}
-        <script src="static/run.js">ADD({{thing}})</script>
-    {% endfor %}
+        <script src="static/run.js">
+        var thing = document.getElementById("INVIS");
+        var array = JSON.parse(string);
+        console.log(array)
+        var heyy = []
+
+        for (a in array){
+            heyy.push(JSON.parse(a))
+            ADD( a )
+        }
+        </script>
     </div>
     </aside>
+
+    
 
     
 </body>
