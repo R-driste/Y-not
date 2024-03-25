@@ -1,0 +1,27 @@
+body{
+    background-color:rgb(18, 61, 41);
+}
+h1{
+    color:rgb(187, 243, 109);
+}
+
+#map-aside {
+    position: fixed; /* Position the aside element */
+    top: 8px; /* Align the top edge with the top of the viewport */
+    bottom: 8px;
+    right: 0; /* Align the right edge with the right side of the viewport */
+    width: 550px; /* Set the width of the aside element */
+    height:auto;
+    background-color: #f0f0f0; /* Background color of the aside element */
+  }
+
+#map {
+    width: 100%; /* Set the width of the map container to fill the aside element */
+    height: 100%; /* Set the height of the map container to fill the aside element */
+    border-radius: 20px; /* Adjust border radius as needed */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+#left {
+    margin-left:0;
+}

@@ -1,0 +1,116 @@
+.title {
+    text-align: center;
+    width: 92%;
+    height: 100px;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px;
+    position:absolute;
+    top: 150px;
+    left: 10px;
+    font-family: 'Courier New';
+}
+
+.mission {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-size: 25px;
+    font-family: 'Courier New'
+}
+
+.join {
+    border: none;
+    border-radius: 12px;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 350px;
+    right: 100px;
+}
+
+.aboutus{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+  }
+  .signin{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    left: 325px;
+  }
+  .signup{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+  }
+
+.reviews {
+    position: absolute;
+    top: 475px;
+    left: 60px;
+}
+
+.dristiReview {
+    position: absolute;
+    top: 550px;
+    left: 190px;
+}
+
+.kimeeReview {
+    position: absolute;
+    top: 550px;
+    left: 490px;
+}
+
+.ameyaReview {
+    position: absolute;
+    top: 550px;
+    right: 490px;
+}
+
+.lileighReview {
+    position: absolute;
+    top: 550px;
+    right: 250px;
+}
